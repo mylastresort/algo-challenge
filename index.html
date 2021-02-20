@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe Game</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="game.js"></script>
+  <script src="functions/aimove.js"></script>
+  <script src="functions/avail.js"></script>
+  <script src="functions/avoidloss.js"></script>
+  <script src="functions/bringwin.js"></script>
+  <script src="functions/checkwin.js"></script>
+  <script src="functions/findmatch.js"></script>
+  <script src="functions/firstcheck.js"></script>
+  <script src="functions/genratememory.js"></script>
+  <script src="functions/getnewboard.js"></script>
+  <script src="functions/minimax.js"></script>
+  <script src="functions/move.js"></script>
+  <script src="functions/store.js"></script>
+  <script src="functions/test.js"></script>
+  <script src="functions/turn.js"></script>
+  <script src="functions/undomove.js"></script>
+</head>
+
+<body>
+  <div id="init">
+    <div class="choise" id="choise">
+      <p id="text">You are</p>
+      <section id="choisesSection1">
+        <button id="choises">X</button>
+        <p id="choises">Or</p>
+        <button id="choises">O</button>
+      </section>
+    </div>
+    <div class="chosentemplate" id="chosentemplate">
+      <p id="text">You want</p>
+      <section id="choisesSection2">
+        <select class="grids" id="Gridvalues">
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+          <option value="9">9</option>
+        </select>
+        <p id="choises">Grids</p>
+        <select class="required" id="Requiredvalues">
+          <option value="3">3</option>
+        </select>
+        <p id="choises">Cases to win</p>
+        <input id="killalgo" type="text">
+        <p id="choises">maxiumum seconds between turns</p>
+        <button id="choises">Start!</button>
+      </section>
+    </div>
+  </div>
+  <script src="functions/reset.js"></script>
+  <script src="functions/eventListeners.js"></script>
+</body>
